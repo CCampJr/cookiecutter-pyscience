@@ -1,18 +1,18 @@
 .. -*- mode: rst -*-
 
-.. image:: https://github.com/{{cookiecutter.gh_owner}}/{{cookiecutter.gh_project_name}}/actions/workflows/python-testing.yml/badge.svg
+.. image:: https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.github_project_name}}/actions/workflows/python-testing.yml/badge.svg
 	:alt: pytest
-	:target: https://github.com/{{cookiecutter.gh_owner}}/{{cookiecutter.gh_project_name}}/actions/workflows/python-testing.yml
+	:target: https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.github_project_name}}/actions/workflows/python-testing.yml
 
-.. image:: https://codecov.io/gh/{{cookiecutter.gh_owner}}/{{cookiecutter.gh_project_name}}/branch/master/graph/badge.svg?token=WIHgHEUc82
+.. image:: https://codecov.io/gh/{{cookiecutter.github_username}}/{{cookiecutter.github_project_name}}/branch/master/graph/badge.svg?token=WIHgHEUc82
 	:alt: Codecov
-	:target: https://codecov.io/gh/{{cookiecutter.gh_owner}}/{{cookiecutter.gh_project_name}}
+	:target: https://codecov.io/gh/{{cookiecutter.github_username}}/{{cookiecutter.github_project_name}}
 
 .. image:: https://img.shields.io/badge/License-NIST%20Public%20Domain-green.svg
     :alt: NIST Public Domain
-    :target: https://github.com/{{cookiecutter.gh_owner}}/{{cookiecutter.gh_project_name}}/blob/master/LICENSE.md
+    :target: https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.github_project_name}}/blob/master/LICENSE.md
 
-{{cookiecutter.project_name}} - {{cookiecutter.brief_description}}
+{{cookiecutter.project_name}} - {{cookiecutter.short_description}}
 ============================================================
 
 {{cookiecutter.long_description}}
@@ -34,23 +34,23 @@ Installation
 -------------
 
 **NOTE**: The `examples/` and `doc/` folders are not included in the pip installation.
-You will need to download the file from the `GitHub repo <https://github.com/{{cookiecutter.gh_owner}}/{{cookiecutter.gh_project_name}}>`_ manually. 
+You will need to download the file from the `GitHub repo <https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.github_project_name}}>`_ manually. 
 
 Using pip
 ~~~~~~~~~
 
 .. code::
 
-    pip install {{cookiecutter.project_name}}
+    pip install {{cookiecutter.project_slug}}
 
 Using pip (soft install, i.e. can update with git)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code::
     
-    # Make new directory for hilbert-toolkit and enter it
+    # Make new directory for {{cookiecutter.project_slug}} and enter it
     # Clone from github
-    git clone https://github.com/{{cookiecutter.gh_owner}}/{{cookiecutter.gh_project_name}} .
+    git clone https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.github_project_name}} .
 
     pip install -e .
 
@@ -73,9 +73,9 @@ THE SOFTWARE IS PROVIDED 'AS IS' WITHOUT ANY WARRANTY OF ANY KIND, EITHER EXPRES
 
 Contact
 -------
-{{cookiecutter.creator_name}}: `{{cookiecutter.creator_email}} <mailto:{{cookiecutter.creator_email}}>`_
+{{cookiecutter.full_name}}: `{{cookiecutter.email}} <mailto:{{cookiecutter.email}}>`_
 
 Contributors
 -------------
 
--   {{cookiecutter.creator_name}}
+-   {{cookiecutter.full_name}}

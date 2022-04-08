@@ -7,16 +7,16 @@ import os
 from setuptools import find_packages, setup
 
 # get __version__ from _version.py
-ver_file = os.path.join('{{cookiecutter.project_name}}', '_version.py')
+ver_file = os.path.join('{{cookiecutter.project_slug}}', '_version.py')
 with open(ver_file) as f:
     exec(f.read())
 
-DISTNAME = '{{cookiecutter.project_name}}'
+DISTNAME = '{{cookiecutter.project_slug}}'
 DESCRIPTION = '{{cookiecutter.short_description}}'
 with codecs.open('README.rst', encoding='utf-8-sig') as f:
     LONG_DESCRIPTION = f.read()
-MAINTAINER = '{{cookiecutter.creator_name}}'
-MAINTAINER_EMAIL = '{{cookiecutter.creator_email}}'
+MAINTAINER = '{{cookiecutter.full_name}}'
+MAINTAINER_EMAIL = '{{cookiecutter.email}}'
 URL = ''
 LICENSE = 'Public Domain'
 DOWNLOAD_URL = ''

@@ -1,9 +1,10 @@
 {
-    "project_name": "project_name",
-    "gh_owner": "Github owner name",
-    "gh_project_name": "Github project name",
-    "brief_description": "A brief, 1 line description",
-    "long_description": "A longer description for the README file",
-    "creator_name": "A. B. Smith",
-    "creator_email": "ab.smith@example.com"
+    "full_name": "Charles H. Camp Jr.",
+    "email": "charles.camp@nist.gov",
+    "project_name": "Project name",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+    "github_username": "CCampJr",
+    "github_project_name": "{{ cookiecutter.project_slug}}",
+    "short_description": "A brief 1 line description",
+    "long_description": "A longer description for the README file"
 }
