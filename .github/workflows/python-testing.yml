@@ -32,7 +32,7 @@ jobs:
         pip install pytest
         pip install pytest-cov
         pip install pytest-cookies
-        pytest --cov=./ --cov-report=xml --template
+        pytest --cov=./ --cov-report=xml --template=./
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v2
       with:
