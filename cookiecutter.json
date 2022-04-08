@@ -1,0 +1,9 @@
+{
+    "project_name": "project_name",
+    "gh_owner": "Github owner name",
+    "gh_project_name": "Github project name",
+    "brief_description": "A brief, 1 line description",
+    "long_description": "A longer description for the README file",
+    "creator_name": "A. B. Smith",
+    "creator_email": "ab.smith@example.com"
+}
